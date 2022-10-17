@@ -27,7 +27,7 @@ imp.forEach((e)=>{
 const img = document.querySelectorAll('img');
 console.log(img)
 img.forEach((e)=>{
-    if (img != '.important'){
+    if (e.classList.contains('important')){
         e.style.display="none";
     }
     else{
@@ -36,5 +36,7 @@ img.forEach((e)=>{
     
 
 });
+
+
 
 
